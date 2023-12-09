@@ -1,6 +1,8 @@
 import React from "react";
 import HeroSection from"../components/HeroSection";
 import Project from "../components/project";
+import footer from "../components/footer"
+
 
 export default function Home(){
   return(
@@ -8,6 +10,7 @@ export default function Home(){
       <main>
         <HeroSection/>
         <Project/>
+        <footer/>
       </main>
     </div>
   );
