@@ -1,7 +1,8 @@
 import React from "react";
 import HeroSection from"../components/HeroSection";
 import Project from "../components/project";
-import footer from "../components/footer"
+import Footer from "../components/Footer";
+import AboutMe from "../components/AboutMe";
 
 
 export default function Home(){
@@ -9,9 +10,10 @@ export default function Home(){
     <div className="flex min-h-screen flex-col">
       <main>
         <HeroSection/>
+        <AboutMe/>
         <Project/>
-        <footer/>
       </main>
+      <Footer/>
     </div>
   );
 }
