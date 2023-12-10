@@ -1,9 +1,9 @@
 import React from "react";
+import { PlayIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import { PlayIcon, EyeIcon} from '@heroicons/react/24/outline'
 
-const Projectcard = ({ imgUrl, title, description, youtubeUrl}) => {
-    return (
+const ProjectCard = ({imgUrl, title, description, youtubeUrl}) => {
+    return(
         <div>
             {/* <Image src={imgUrl} height={208} width={1000} className="md:h-72 hover:opacity-30 object-contain bg-no-repeat bg-center rounded-t-xl"/> */}
             <div
@@ -11,7 +11,7 @@ const Projectcard = ({ imgUrl, title, description, youtubeUrl}) => {
             style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}>
 
                 <div className="overlay items-center justify-center top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
-                    <Link
+                <Link
                         href={youtubeUrl}
                         className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
                     >
@@ -29,4 +29,5 @@ const Projectcard = ({ imgUrl, title, description, youtubeUrl}) => {
     );    
 };
 
-export default Projectcard;
+export default ProjectCard;
+
