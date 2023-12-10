@@ -1,6 +1,6 @@
 import React from "react";
 import HeroSection from "../components/HeroSection";
-import Project from "../components/project";
+import Project from "../components/Project";
 import Footer from "../components/Footer";
 import AboutMe from "../components/AboutMe";
 import EmailSection from "../components/EmailSection";
